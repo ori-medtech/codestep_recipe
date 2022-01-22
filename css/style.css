@@ -1,0 +1,128 @@
+/* utility */
+body {
+  font-family: Helvetica Neue, Arial, Hiragino Sans, Meiryo, sans-serif;
+  width: 100%;
+  font-size: 16px;
+  color: #2B2A27;
+}
+
+body h1 {
+  font-size: 32px;
+}
+
+body a {
+  text-decoration: none;
+  color: #2B2A27;
+}
+
+body a :hover {
+  opacity: .6;
+}
+
+body a :visited {
+  color: #2B2A27;
+}
+
+body li {
+  list-style: none;
+}
+
+.container {
+  width: 52%;
+  margin: 0 auto;
+}
+
+/* mainvisual */
+.mainvisual img {
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 0;
+     object-position: 0 0;
+}
+
+/* introduction */
+.introduction {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.introduction h1 {
+  padding-bottom: 20px;
+}
+
+.introduction p {
+  line-height: 1.5;
+}
+
+/* recipe */
+.recipe {
+  width: 100vw;
+  margin-top: 80px;
+}
+
+.recipe ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.recipe li {
+  width: calc(100% / 3);
+}
+
+.recipe li img {
+  height: 500px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* more */
+.more {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.more_button {
+  border: 1px solid #2B2A27;
+  padding: 18px 60px;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* footer */
+footer {
+  margin-top: 80px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.sns {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sns a {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.sns li + li {
+  padding-left: 20px;
+}
+
+.copyright {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=style.css.map */
