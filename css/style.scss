@@ -1,6 +1,10 @@
 /* utility */
 $color: #2B2A27;
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Helvetica Neue, Arial, Hiragino Sans, Meiryo, sans-serif;
   width: 100%;
@@ -40,6 +44,7 @@ body {
   height: 100vh;
   object-fit: cover;
   object-position: 0 0;
+  vertical-align: top ;
 }
 
 /* introduction */
@@ -49,6 +54,7 @@ body {
 
   h1 {
     padding-bottom: 20px;
+    line-height: 1.125;
   }
 
   p {
@@ -72,7 +78,7 @@ body {
       height: 500px;
       width: 100%;
       object-fit: cover;
-
+      vertical-align: bottom;
     }
   }
 }
@@ -86,7 +92,7 @@ body {
 
 .more_button {
   border: 1px solid $color;
-  padding: 18px 60px;
+  padding: 17px 59px;
   display: inline-block;
   font-size: 14px;
   line-height: 1.5;
@@ -103,8 +109,9 @@ footer {
 .sns {
   display: flex;
   justify-content: center;
-
+  
   a {
+    // background-color: tomato;
     text-decoration: underline;
     text-underline-offset: 0.2em;  
   }
@@ -115,7 +122,30 @@ footer {
 }
 
 .copyright {
-  margin-top: 20px;
+  margin-top: calc(20px + 0.2em);
   margin-bottom: 20px;
 }
 
+/* media query */
+
+@media screen and (max-width: 834px) {
+ .container {
+   width: 100%;
+   padding-left: 28px;
+   padding-right: 28px;
+ }
+ 
+  .mainvisual img{
+   object-position: 50% 50%;
+   }
+ 
+  .recipe {
+    ul {
+      display: block;
+    } 
+    
+    li {
+      width: 100%;
+    }
+  }
+}
